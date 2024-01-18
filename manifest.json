@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Mailer Ext",
+    "version": "1.0",
+    "description": "Create account",
+    "permissions": [
+      "tabs"
+    ],
+    "action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content_script.js"],
+        "run_at": "document_end"
+      }
+    ]
+  }
+  
